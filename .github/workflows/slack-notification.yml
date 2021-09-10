@@ -14,7 +14,7 @@ jobs:
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C02E2GKP0UA
-          slack-text: New bug reported: "${{ github.event_name }}" and Repo "${{ github.repository }}" [at mater]
+          slack-text: New issue reported and Repo "${{ github.repository }}"
 
       - name: Result from "Send Slack Message"
         run: echo '${{ steps.send-message.outputs.slack-result }}'
