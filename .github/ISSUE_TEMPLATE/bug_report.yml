@@ -1,6 +1,6 @@
 name: Bug report
 description: Report a bug in Decentraland
-labels: [new]
+labels: [new, explorer]
 body:
 
 - type: markdown
