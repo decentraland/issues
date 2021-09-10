@@ -67,6 +67,8 @@ body:
 
 - type: input
   id: unity
+  description: >
+        If this field is not filled automatically, please run the /version command in the chat window to see the kernel and unity renderer versions.
   attributes:
     label: Unity Version
     placeholder: latest
@@ -86,7 +88,7 @@ body:
     label: What happened?
     description: |
       Please try to describe in detail what your issue has been. 
-      You can include screenshots or videos by simply dragging and dropping them into this field, or include portions of code using the <code>````</code> tags.
+      You can include screenshots or videos by simply dragging and dropping them into this field, or include portions of code using the <code>```</code> tags.
   validations:
     required: true
 
