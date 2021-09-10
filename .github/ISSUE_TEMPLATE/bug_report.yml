@@ -67,10 +67,10 @@ body:
 
 - type: input
   id: unity
-  description: >
-        If this field is not filled automatically, please run the /version command in the chat window to see the kernel and unity renderer versions.
   attributes:
     label: Unity Version
+    description: >
+        If this field is not filled automatically, please run the /version command in the chat window to see the kernel and unity renderer versions.
     placeholder: latest
   validations:
     required: true
