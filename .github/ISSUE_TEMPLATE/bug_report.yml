@@ -74,7 +74,15 @@ body:
         If this field is not filled automatically, please run the /version command in the chat window to see the kernel and unity renderer versions.
     placeholder: latest
   validations:
-    required: true
+    required: false
+
+- type: input
+  id: realm
+  attributes:
+    label: In which real are you?
+    placeholder: 
+  validations:
+    required: false
 
 - type: input
   id: nametag
