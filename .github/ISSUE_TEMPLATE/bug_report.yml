@@ -47,6 +47,7 @@ body:
     required: true
 
 - type: input
+  id: sysinfo
   attributes:
     label: System information
     description: |
