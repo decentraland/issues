@@ -8,17 +8,18 @@ body:
     value: |
       Thank you for taking the time to report this issue! Before reporting, please be sure to check the open [issues](https://github.com/decentraland/issues) to ensure it's already reported by someone else.
   
-- type: dropdown
+- type: checkbox
   id: browser
   attributes:
     label: What browsers are you seeing the problem on?
+    description: You may select more than one.
     options:
-      - Firefox
-      - Chrome
-      - Microsoft Edge
-      - Safari
-      - Opera
-      - Other
+      - label: Firefox
+      - label: Chrome
+      - label: Microsoft Edge
+      - label: Safari
+      - label: Opera
+      - label: Other
   validations:
     required: true
 
