@@ -79,7 +79,7 @@ body:
 - type: input
   id: realm
   attributes:
-    label: In which real are you?
+    label: In which realm are you?
     placeholder: 
   validations:
     required: false
