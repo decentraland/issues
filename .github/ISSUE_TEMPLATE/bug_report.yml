@@ -87,7 +87,7 @@ body:
 - type: input
   id: nametag
   attributes:
-    label: What's your ingame name?
+    label: What's your in-game nametag?
     placeholder: johndoe#1111
   validations:
     required: false
