@@ -8,30 +8,12 @@ body:
     value: |
       Thank you for taking the time to report this issue! Before reporting, please be sure to check the open [issues](https://github.com/decentraland/issues) to ensure it's already reported by someone else.
   
-- type: dropdown
-  id: browser
-  attributes:
-    label: What browser are you seeing the problem on?
-    options:
-      - Firefox
-      - Chrome
-      - Microsoft Edge
-      - Safari
-      - Opera
-      - Other
-  validations:
-    required: true
-
-- type: dropdown
+- type: input
   id: os
   attributes:
-    label: What is your operating system?
-    options:
-      - Windows
-      - MacOS
-      - Linux
-      - Other
-  validations: 
+    label: What is your browser and operating system?
+    placeholder: Chrome, Windows 10
+  validations:
     required: true
 
 - type: dropdown
@@ -47,12 +29,26 @@ body:
     required: true
 
 - type: input
-  id: sysinfo
+  id: cpu
   attributes:
-    label: System information
-    description: |
-      Describe the technical specifications of your device, including CPU, graphics card and memory.
+    label: CPU name and model.
     placeholder: Intel i9 10th generation, 32GB RAM, NVIDIA 980TI
+  validations:
+    required: true
+
+- type: input
+  id: gpu
+  attributes:
+    label: Graphics Card name and model.
+    placeholder: NVIDIA 980TI
+  validations:
+    required: true
+
+- type: input
+  id: ram
+  attributes:
+    label: Memory Size.
+    placeholder: 32GB
   validations:
     required: true
 
