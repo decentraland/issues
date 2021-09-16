@@ -8,10 +8,30 @@ body:
     value: |
       Thank you for taking the time to report this issue! Before reporting, please be sure to check the open [issues](https://github.com/decentraland/issues) to ensure it's already reported by someone else.
   
+- type: textarea
+  attributes:
+    label: What happened?
+    description: |
+      Please try to describe in detail what your issue has been. 
+      You can include screenshots or videos by simply dragging and dropping them into this field, or include portions of code using the <code>```</code> tags.
+      Please include coordinates.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: |
+      Describe the necessary steps we can take in order to reproduce this error.
+  validations:
+    required: true
+
 - type: input
   id: os
   attributes:
-    label: What is your browser and operating system?
+    label: Operating System
+    description: |
+        What is your browser and operating system?
     placeholder: Chrome, Windows 10
   validations:
     required: true
@@ -19,7 +39,9 @@ body:
 - type: dropdown
   id: wallet
   attributes:
-    label: Which wallet are you using?
+    label: Wallet
+    description: |
+        Which wallet are you using?
     options:
       - Metamask
       - Fortmatic
@@ -31,7 +53,9 @@ body:
 - type: input
   id: cpu
   attributes:
-    label: What is your CPU name and model?
+    label: CPU
+    description: |
+        What is your CPU name and model?
     placeholder: Intel i9 10th generation.
   validations:
     required: true
@@ -39,7 +63,9 @@ body:
 - type: input
   id: gpu
   attributes:
-    label: What is your Graphics Card name and model?
+    label: GPU
+    description: |
+        What is your Graphics Card name and model?
     placeholder: NVIDIA 980TI
   validations:
     required: true
@@ -47,7 +73,9 @@ body:
 - type: input
   id: ram
   attributes:
-    label: What is your Memory Size?
+    label: RAM
+    description: |
+        What is your Memory Size?
     placeholder: 32GB
   validations:
     required: true
@@ -75,7 +103,9 @@ body:
 - type: input
   id: realm
   attributes:
-    label: In which realm are you?
+    label: Realm
+    description: |
+        In which realm are you?
     placeholder: fenrir
   validations:
     required: false
@@ -83,25 +113,10 @@ body:
 - type: input
   id: nametag
   attributes:
-    label: What's your in-game nametag?
+    label: NameTag
+    description: |
+        What's your in-game nametag?
     placeholder: johndoe#1111
   validations:
     required: false
 
-- type: textarea
-  attributes:
-    label: What happened?
-    description: |
-      Please try to describe in detail what your issue has been. 
-      You can include screenshots or videos by simply dragging and dropping them into this field, or include portions of code using the <code>```</code> tags.
-      Please include coordinates.
-  validations:
-    required: true
-
-- type: textarea
-  attributes:
-    label: Steps to reproduce
-    description: |
-      Describe the necessary steps we can take in order to reproduce this error.
-  validations:
-    required: true
